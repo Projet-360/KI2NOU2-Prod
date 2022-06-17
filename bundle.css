@@ -411,27 +411,27 @@ section {
   font-family: 'Open Sans', sans-serif;
   -webkit-transition: all .35s ease-in;
   transition: all .35s ease-in;
-  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 600, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 600, 0, 0, 1);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   visibility: hidden;
   opacity: 0;
 }
 
 .section-out {
-  -webkit-transform: matrix3d(1, 0, 0, 0, -0.9, 1, 0, 0, 0, 0, 1, 0, -600, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, -0.9, 1, 0, 0, 0, 0, 1, 0, -600, 0, 0, 1);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .section-return {
-  -webkit-transform: matrix3d(1, 0, 0, 0, -0.9, 1, 0, 0, 0, 0, 1, 0, 600, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, -0.9, 1, 0, 0, 0, 0, 1, 0, 600, 0, 0, 1);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: none !important;
   transition: none !important;
 }
 
 .section-show {
-  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   visibility: visible !important;
   opacity: 1 !important;
 }
@@ -464,7 +464,7 @@ section {
   width: 70px;
   height: 70px;
   z-index: 200;
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -543,6 +543,11 @@ section {
   height: 50vh;
 }
 
+#loader {
+  visibility: visible;
+  opacity: 1;
+}
+
 #rules {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,7 +580,7 @@ section {
 }
 
 #rules h1 {
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -689,7 +694,7 @@ section {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -778,7 +783,7 @@ section {
   left: 0;
   width: 120px;
   height: 40px;
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #ae91f2, #9d7aef, #ef52f6, #ed3af5, #ef2b34, #ed131d);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1038,7 +1043,7 @@ section {
 }
 
 #question h1 {
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1101,7 +1106,7 @@ section {
   font-size: 500px;
   margin: 0;
   line-height: 400px;
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1243,6 +1248,262 @@ section {
   }
 }
 
+#point .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 15px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  overflow: hidden;
+}
+
+#point .point::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #4fad19, #459716, #d9df35, #d2d822, #e95e06, #d05405);
+  background-size: 400% 400%;
+  -webkit-animation: GradientColor 20s ease infinite;
+          animation: GradientColor 20s ease infinite;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.1);
+}
+
+#point .point span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fefbf0;
+  position: relative;
+  width: 99%;
+  height: 99%;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  mix-blend-mode: screen;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+#point .point span .name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#point .point span .point {
+  position: absolute;
+  right: 20px;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#point .point .edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 0px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#point .point .edit svg {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+#point .point.active {
+  cursor: pointer;
+}
+
+#point .point.active span {
+  -webkit-transform: scaleX(0.9) translateX(-30px);
+          transform: scaleX(0.9) translateX(-30px);
+  cursor: pointer;
+}
+
+#point .point.active span .name {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+#point .point.active .edit {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#point .point:hover {
+  cursor: pointer;
+}
+
+#point .point:hover span {
+  -webkit-transform: scaleX(0.96) translateX(-11px);
+          transform: scaleX(0.96) translateX(-11px);
+  cursor: pointer;
+}
+
+#point .point:hover span .name {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+#point .point:hover .edit {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes GradientColor {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+#point .point span {
+  padding: 20px;
+}
+
+#point .point span svg {
+  height: 100%;
+}
+
+#point .point span svg .svgwin {
+  fill: #ff00ff;
+}
+
+#point .point span svg .svgloose {
+  fill: #00ffff;
+}
+
+#alert {
+  background: #01040f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#alert h1 {
+  text-align: center;
+}
+
+#alert.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+main {
+  max-width: 600px;
+  max-height: 1000px;
+  position: relative;
+}
+
 .addPlayer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1277,7 +1538,7 @@ section {
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1375,37 +1636,13 @@ section {
   margin: 5px;
 }
 
-.addPlayer.active {
-  cursor: pointer;
-}
-
-.addPlayer.active span {
-  -webkit-transform: scaleX(0.9) translateX(-30px);
-          transform: scaleX(0.9) translateX(-30px);
-  cursor: pointer;
-}
-
-.addPlayer.active span .name {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-}
-
-.addPlayer.active .edit {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 60px;
-  opacity: 1;
-  visibility: visible;
-}
-
 .addPlayer:hover {
   cursor: pointer;
 }
 
 .addPlayer:hover span {
-  -webkit-transform: scaleX(0.96) translateX(-11px);
-          transform: scaleX(0.96) translateX(-11px);
+  -webkit-transform: scaleX(0.85) translateX(-8%);
+          transform: scaleX(0.85) translateX(-8%);
   cursor: pointer;
 }
 
@@ -1418,7 +1655,7 @@ section {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 20px;
+  width: 15%;
   opacity: 1;
   visibility: visible;
 }
@@ -1431,6 +1668,36 @@ section {
   50% {
     background-position: 100% 50%;
   }
+}
+
+.addPlayer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 93% !important;
+}
+
+.addPlayer span .name {
+  font-size: 14px !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  -webkit-transform: unset !important;
+          transform: unset !important;
 }
 
 .ThemeSelect {
@@ -1783,37 +2050,13 @@ button:hover span {
   margin: 5px;
 }
 
-.card.active {
-  cursor: pointer;
-}
-
-.card.active span {
-  -webkit-transform: scaleX(0.9) translateX(-30px);
-          transform: scaleX(0.9) translateX(-30px);
-  cursor: pointer;
-}
-
-.card.active span .name {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-}
-
-.card.active .edit {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 60px;
-  opacity: 1;
-  visibility: visible;
-}
-
 .card:hover {
   cursor: pointer;
 }
 
 .card:hover span {
-  -webkit-transform: scaleX(0.96) translateX(-11px);
-          transform: scaleX(0.96) translateX(-11px);
+  -webkit-transform: scaleX(0.85) translateX(-8%);
+          transform: scaleX(0.85) translateX(-8%);
   cursor: pointer;
 }
 
@@ -1826,7 +2069,7 @@ button:hover span {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 20px;
+  width: 15%;
   opacity: 1;
   visibility: visible;
 }
@@ -1842,7 +2085,7 @@ button:hover span {
 }
 
 h1 {
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1868,7 +2111,7 @@ h1 {
 }
 
 li {
-  background: linear-gradient(-45deg, #b052e6, #a63ce3, #2620ca, #221db4, #16a1f9, #0695ef);
+  background: linear-gradient(-45deg, #b052e6, #a63ce3, #423dd8, #2f2ad1, #16a1f9, #0695ef);
   background-size: 400% 400%;
   -webkit-animation: GradientColor 20s ease infinite;
           animation: GradientColor 20s ease infinite;
@@ -1910,16 +2153,5 @@ li {
   left: 0;
   height: 15vh;
   width: 100%;
-}
-
-#loader {
-  visibility: visible;
-  opacity: 1;
-}
-
-main {
-  max-width: 600px;
-  max-height: 1000px;
-  position: relative;
 }
 
